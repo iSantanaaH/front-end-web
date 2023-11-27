@@ -1,7 +1,12 @@
+{/* Importações principais */}
 import Image from "next/image";
 import Link from "next/link";
 
+{/* Estilos */}
 import styles from "./NavBar.module.css";
+
+{/* React-icons */}
+import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
   return (
@@ -21,14 +26,9 @@ export default function NavBar() {
           </section>
 
           <section className={styles.SocialNetworks}>
-            <Image
-              src={
-                "https://icongr.am/devicon/linkedin-original.svg?size=100&color=currentColor"
-              }
-              width={100}
-              height={100}
-              alt="Linkedin"
-            />
+            <FaLinkedin />
+            <FaInstagramSquare />
+            <FaGithub />
           </section>
         </div>
       </nav>

@@ -1,0 +1,11 @@
+.NavBar {
+    display: grid;
+    grid-template-columns: 12fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContentNavBar {
+    display: flex;
+    gap: 2rem;
+}
