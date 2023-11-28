@@ -1,11 +1,22 @@
 .NavBar {
-    display: grid;
-    grid-template-columns: 12fr;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.ContentNavBar {
-    display: flex;
-    gap: 2rem;
+.SectionPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 9rem;
+  overflow: hidden;
+}
+
+.DevPhoto {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border-radius: 10rem;
 }
