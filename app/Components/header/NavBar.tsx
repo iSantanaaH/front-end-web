@@ -24,7 +24,7 @@ export default function NavBar() {
               src={"/Images/micael.png"}
               width={100}
               height={100}
-              alt="Minha Foto"
+              alt="Foto de Micael Santana"
               className="DevPhoto"
             ></Image>
           </figure>
@@ -37,9 +37,9 @@ export default function NavBar() {
         </section>
 
         <section className={styles.SocialNetworks}>
-          <FaLinkedin />
-          <FaInstagramSquare />
-          <FaGithub />
+          <FaLinkedin color="#FFF"/>
+          <FaInstagramSquare color="#FFF"/>
+          <FaGithub color="#FFF"/>
         </section>
       </nav>
     </>

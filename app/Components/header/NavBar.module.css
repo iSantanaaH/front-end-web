@@ -15,8 +15,9 @@
 }
 
 .DevPhoto {
+  border-radius: 100%;
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  border-radius: 10rem;
+  object-fit: cover;
 }
