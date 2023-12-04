@@ -1,23 +1,33 @@
 .NavBar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.SectionPhoto {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 9rem;
-  overflow: hidden;
+  justify-content: space-around;
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid var(--white-full);
 }
 
-.DevPhoto {
-  border-radius: 100%;
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.SectionLinks span {
+  padding: 0.3rem;
+  color: var(--white-full);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.LinksDefault {
+  text-decoration: none;
+}
+
+.ContainerLogo p {
+  color: var(--white-full);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ContainerLogo span {
+  color: var(--green-500);
+}
+
+.SocialNetworks div span{
+  padding: 0.3rem;
+  font-size: 1.5rem;
 }
