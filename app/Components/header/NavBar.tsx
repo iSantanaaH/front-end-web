@@ -16,32 +16,50 @@ import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
 
 export default function NavBar() {
   return (
-    <>
+    <header className={styles.HeaderNavBar}>
       <nav className={styles.NavBar}>
-        <section className={styles.SectionPhoto}>
-          <figure>
-            <Image
-              src={"/Images/micael.png"}
-              width={100}
-              height={100}
-              alt="Foto de Micael Santana"
-              className="DevPhoto"
-            ></Image>
-          </figure>
+        <section className={styles.ContainerLogo}>
+          <div>
+            <p>
+              Micael<span>Dev</span>
+            </p>
+          </div>
         </section>
 
         <section className={styles.SectionLinks}>
-          <Link href={"/"}>Projetos</Link>
-          <Link href={"/"}>Tecnologias</Link>
-          <Link href={"/"}>Sobre mim</Link>
+          <div>
+            <Link className={styles.LinksDefault} href={"/"} passHref>
+              <span>Projetos</span>
+            </Link>
+            <Link className={styles.LinksDefault} href={"/"} passHref>
+              <span>Tecnologias</span>
+            </Link>
+            <Link className={styles.LinksDefault} href={"/"} passHref>
+              <span>Sobre mim</span>
+            </Link>
+          </div>
         </section>
 
         <section className={styles.SocialNetworks}>
-          <FaLinkedin color="#FFF"/>
-          <FaInstagramSquare color="#FFF"/>
-          <FaGithub color="#FFF"/>
+          <div>
+            <Link target="_blank" href={"https://github.com/iSantanaaH"} passHref>
+              <span>
+                <FaGithub color="#FFF" />
+              </span>
+            </Link>
+            <Link target="_blank" href={"https://www.linkedin.com/in/micael-santana-4626181a5/"} passHref>
+              <span>
+                <FaLinkedin color="#FFF" />
+              </span>
+            </Link>
+            <Link target="_blank" href={"/"} passHref>
+              <span>
+                <FaInstagramSquare color="#FFF" />
+              </span>
+            </Link>
+          </div>
         </section>
       </nav>
-    </>
+    </header>
   );
 }
