@@ -1,0 +1,51 @@
+.Resume {
+  font-size: 1.2rem;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0 1rem 7rem;
+  color: var(--white-full);
+}
+
+.Resume h2 {
+  font-weight: 500;
+}
+
+.Resume p {
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+.Resume button {
+  border: none;
+  padding: 1rem;
+  background: linear-gradient(to right, #2ecc71, #3498db);
+  color: var(--white-full);
+  margin-top: 1.5rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.Resume button:hover {
+  background: conic-gradient(from -10deg, #3498db, #2ecc71, #3498db);
+  transition: background 0.5s ease-in-out;
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  animation: gradientShift 2s linear infinite;
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
