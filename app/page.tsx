@@ -24,7 +24,32 @@ export default function HomePage() {
             para aplicar meus conhecimentos junto a equipe e contribuir para um
             sucesso contínuo.
           </p>
-          <button>Vamos navegar...</button>
+          <button>
+            <span>
+              <br></br>
+              Vamos Começar
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section className={styles.Projects}>
+        <div>
+          <h2>Projetos</h2>
+        </div>
+        <div className={styles.ContainerBoxes}>
+          <div className={styles.Box}>
+            <figure>
+              <img src="" alt="Projeto 1" />
+            </figure>
+
+            <h3>Projeto 1</h3>
+
+            <p className={styles.Details}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              eros magna, ornare non pulvinar eget, euismod ut nulla.
+            </p>
+          </div>
         </div>
       </section>
     </main>
