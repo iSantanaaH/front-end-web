@@ -1,7 +1,6 @@
 {
   /* Importações principais */
 }
-import Image from "next/image";
 import Link from "next/link";
 
 {
@@ -52,7 +51,7 @@ export default function NavBar() {
                 <FaLinkedin color="#FFF" />
               </span>
             </Link>
-            <Link target="_blank" href={"/"} passHref>
+            <Link target="_blank" href={"https://www.instagram.com/dev_santanaah/"} passHref>
               <span>
                 <FaInstagramSquare color="#FFF" />
               </span>
