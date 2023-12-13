@@ -132,3 +132,15 @@
   height: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+
+.ContainerResume {
+  display: flex;
+  min-height: 30rem;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.BackgroundImage {
+  position: absolute;
+  top: 7rem;
+  right: 4rem;
+}
