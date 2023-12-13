@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 {
   /* Componentes */
 }
@@ -13,7 +15,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.ContainerResume}>
         <div className={styles.Resume}>
           <h2>Resumo</h2>
           <p>
@@ -30,6 +32,12 @@ export default function HomePage() {
               Vamos Começar
             </span>
           </button>
+        </div>
+
+        <div className={styles.BackgroundImage}>
+          <figure>
+            <Image className={styles.LogoJavascript} src={"/Images/javascript.png"} width={500} height={300} alt="Logo react.js"/>
+          </figure>
         </div>
       </section>
 
