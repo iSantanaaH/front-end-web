@@ -3,7 +3,11 @@
   align-items: center;
   justify-content: space-around;
   padding: 1.5rem;
-  border-bottom: 0.1rem solid var(--white-full);
+  filter: drop-shadow(0.4rem 0.4rem 0.4rem var(--black-full));
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .SectionLinks span {
