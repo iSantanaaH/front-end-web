@@ -4,12 +4,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 3rem 0 1rem 7rem;
+  margin: 8rem 0 9rem 7rem;
   color: var(--white-full);
+  padding: 1rem;
 }
 
 .Resume h2 {
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .Resume p {
@@ -136,11 +138,36 @@
 .ContainerResume {
   display: flex;
   min-height: 30rem;
-  border-bottom: 0.1rem solid #fff;
 }
 
 .BackgroundImage {
   position: absolute;
-  top: 7rem;
+  top: 10rem;
   right: 4rem;
+}
+
+.ContainerBoxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+
+.Projects h2 {
+  font-weight: 500;
+  color: var(--white-full);
+  font-size: 2rem;
+  margin: 0 0 3rem 7rem;
+}
+
+.Box {
+  width: 19rem;
+  height: 25rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem 0 2rem 0;
+  background: var(--background);
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--white-full));
 }
