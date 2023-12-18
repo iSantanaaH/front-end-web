@@ -163,6 +163,9 @@
 }
 
 .Box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 19rem;
   height: 25rem;
   padding: 1rem;
