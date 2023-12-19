@@ -23,8 +23,8 @@ export default function HomePage() {
             desenvolvedor front-end, sou formado em Análise e Desenvolvimento de
             Sistemas na UNOPOAR em Dezembro de 2023. Tenho uma paixão profunda
             por tecnologia e estou em constante busca pelo aprimoramento das
-            minhas habilidades na programação. Com um background acadêmico sólido
-            e uma abordagem prática no desenvolvimento de soluções, estou
+            minhas habilidades na programação. Com um background acadêmico
+            sólido e uma abordagem prática no desenvolvimento de soluções, estou
             ansioso para aplicar meu conhecimento e experiência em um ambiente
             colaborativo.
           </p>
@@ -56,10 +56,18 @@ export default function HomePage() {
         <div className={styles.ContainerBoxes}>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="Projeto 1" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+              />
             </figure>
 
-            <h3>Projeto 1</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
             <p className={styles.Details}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
