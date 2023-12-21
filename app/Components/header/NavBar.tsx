@@ -19,9 +19,11 @@ export default function NavBar() {
       <nav className={styles.NavBar}>
         <section className={styles.ContainerLogo}>
           <div>
-            <p>
-              Micael<span>Dev</span>
-            </p>
+            <Link className={styles.MyName} href={"/"} passHref>
+              <p>
+                Micael<span>Dev</span>
+              </p>
+            </Link>
           </div>
         </section>
 
@@ -41,17 +43,29 @@ export default function NavBar() {
 
         <section className={styles.SocialNetworks}>
           <div>
-            <Link target="_blank" href={"https://github.com/iSantanaaH"} passHref>
+            <Link
+              target="_blank"
+              href={"https://github.com/iSantanaaH"}
+              passHref
+            >
               <span>
                 <FaGithub color="#FFF" />
               </span>
             </Link>
-            <Link target="_blank" href={"https://www.linkedin.com/in/micael-santana-4626181a5/"} passHref>
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/in/micael-santana-4626181a5/"}
+              passHref
+            >
               <span>
                 <FaLinkedin color="#FFF" />
               </span>
             </Link>
-            <Link target="_blank" href={"https://www.instagram.com/dev_santanaah/"} passHref>
+            <Link
+              target="_blank"
+              href={"https://www.instagram.com/dev_santanaah/"}
+              passHref
+            >
               <span>
                 <FaInstagramSquare color="#FFF" />
               </span>
