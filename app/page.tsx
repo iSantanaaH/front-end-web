@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 {
   /* Componentes */
@@ -61,6 +62,7 @@ export default function HomePage() {
                 alt="Projeto 1"
                 width={240}
                 height={140}
+                className={styles.ImageProject}
               />
             </figure>
 
@@ -69,84 +71,201 @@ export default function HomePage() {
               <div className={styles.ColorBottomTitle}></div>
             </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 2</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 3</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 4</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 5</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 6</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
           <div className={styles.Box}>
             <figure>
-              <img src="" alt="" />
+              <Image
+                src={"/Images/javascript.png"}
+                alt="Projeto 1"
+                width={240}
+                height={140}
+                className={styles.ImageProject}
+              />
             </figure>
 
-            <h3>Projeto 7</h3>
+            <div className={styles.ContainerTitle}>
+              <h3>Projeto 1</h3>
+              <div className={styles.ColorBottomTitle}></div>
+            </div>
 
-            <p className={styles.Details}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              eros magna, ornare non pulvinar eget, euismod ut nulla.
-            </p>
+            <div className={styles.DescriptionProject}>
+              <p className={styles.Details}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur eros magna, ornare non pulvinar eget, euismod ut
+                nulla.
+              </p>
+            </div>
+
+            <div className={styles.RedirectProject}>
+              <Link href={"/"}>
+                <button className={styles.ButtonProject}>Acessar</button>
+              </Link>
+            </div>
           </div>
-        </div>
+          </div>
       </section>
     </main>
   );
