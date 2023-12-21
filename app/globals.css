@@ -1,9 +1,13 @@
 :root {
   --white-full: #fff;
-  --background: #0f1624;
+  --background: hsl(220, 42%, 14%);
+  --blue300: #3498db;
+  --green400: #2ecc71;
   --green-500: #00ff7f;
-  --green-600: #19DC16;
-  --black-full: #111;
+  --green-600: #19dc16;
+  --black: #111;
+  --blackNavBar: #161616;
+  --gray: #d5d5d5;
 }
 
 .html {
