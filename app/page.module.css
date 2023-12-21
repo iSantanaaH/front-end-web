@@ -164,10 +164,10 @@
 
 .Box {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 19rem;
-  height: 25rem;
+  width: 23rem;
+  height: auto;
   padding: 1rem;
   margin: 1rem;
   border-radius: 2rem 0 2rem 0;
@@ -182,13 +182,53 @@
   padding: 1rem;
 }
 
+.ImageProject {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
 .Box h3 {
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--white-full);
 }
 
+.ContainerTitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .ColorBottomTitle {
-  border-bottom: 0.2rem solid red;
+  background: linear-gradient(to right, #2ecc71, #3498db);
+  height: 0.2rem;
+  border-radius: 1rem;
   margin: 0.3rem 0 1rem;
+  width: 9rem;
+}
+
+.DescriptionProject p {
+  color: var(--white-full);
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  text-align: justify;
+  font-weight: 200;
+}
+
+.RedirectProject button {
+  padding: 0.8rem;
+  background: linear-gradient(to right, var(--green400), var(--blue300));
+  border-radius: 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 0.8rem 0 0.7rem 0;
+  color: var(--background);
+}
+
+.RedirectProject button:hover {
+  transition: 0.5s;
+  background: linear-gradient(to right, var(--blue300), var(--green400));
+  color: var(--white-full);
 }
