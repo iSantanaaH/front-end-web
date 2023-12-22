@@ -29,14 +29,17 @@ export default function NavBar() {
 
         <section className={styles.SectionLinks}>
           <div>
-            <Link className={styles.LinksDefault} href={"/"} passHref>
+            <Link className={styles.LinksDefault} href={"/#projects"} passHref>
               <span>Projetos</span>
             </Link>
-            <Link className={styles.LinksDefault} href={"/"} passHref>
+            <Link className={styles.LinksDefault} href={"/#technologies"} passHref>
               <span>Tecnologias</span>
             </Link>
-            <Link className={styles.LinksDefault} href={"/"} passHref>
+            <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
               <span>Sobre mim</span>
+            </Link>
+            <Link className={styles.LinksDefault} href={"/#skills"} passHref>
+              <span>Habilidades</span>
             </Link>
           </div>
         </section>
