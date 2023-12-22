@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.Projects}>
+      <section id="projects" className={styles.Projects}>
         <div>
           <h2>Projetos</h2>
         </div>
@@ -265,7 +265,106 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="technologies" className={styles.Technologies}>
+        <div>
+          <h2>Tecnologias</h2>
+        </div>
+
+        <div className={styles.ContainerTechnologies}>
+          <div>
+            <Image
+              src={"/Images/html.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
           </div>
+          <div>
+            <Image
+              src={"/Images/css.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/javascript.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/typescript.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/node.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/react.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/postgresql.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/git.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/linux.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/docker.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
