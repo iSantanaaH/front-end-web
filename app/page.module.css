@@ -152,14 +152,16 @@
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
-  max-width: 90%;
+  /* max-width: 90%; */
+  max-width: calc(100vw - 5rem);
+  height: auto;
 }
 
 .Projects h2 {
   font-weight: 500;
   color: var(--white-full);
   font-size: 2rem;
-  margin: 0 0 3rem 7rem;
+  margin: 1rem 0 3rem 7rem;
 }
 
 .Box {
@@ -231,4 +233,32 @@
   transition: 0.5s;
   background: linear-gradient(to right, var(--blue300), var(--green400));
   color: var(--white-full);
+}
+
+.Technologies {
+  min-height: 40rem;
+  margin: 0 auto;
+  max-width: calc(100vw - 5rem);
+}
+
+.Technologies h2 {
+  font-weight: 500;
+  color: var(--white-full);
+  font-size: 2rem;
+  margin: 7rem 0 3rem 4rem;
+}
+
+.ContainerTechnologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.ImageTechnologies {
+  /* background: blue; */
+  border-radius: 0.8rem;
 }
