@@ -364,6 +364,24 @@ export default function HomePage() {
               className={styles.ImageTechnologies}
             />
           </div>
+          <div>
+            <Image
+              src={"/Images/tailwindcss.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
+          <div>
+            <Image
+              src={"/Images/nextjs.svg"}
+              width={100}
+              height={100}
+              alt="Imagem do HTML"
+              className={styles.ImageTechnologies}
+            />
+          </div>
         </div>
       </section>
 
