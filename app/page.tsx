@@ -366,6 +366,35 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <section className={styles.AditionalSkills}>
+        <div className={styles.AditionalTitle}>
+          <h2>Tecnologias e habilidades adicionais</h2>
+        </div>
+        <div className={styles.ContainerSkills}>
+          <div>
+            <ul className={styles.ListSkills}>
+              <li>SQL</li>
+              <li>Banco de dados</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div>
+            <ul className={styles.ListSkills}>
+              <li>Wordpress</li>
+              <li>Next.js</li>
+              <li>Inglês</li>
+            </ul>
+          </div>
+          <div>
+            <ul className={styles.ListSkills}>
+              <li>Aprendizagem rápida</li>
+              <li>Engajamento</li>
+              <li>Trabalho em equipe</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
