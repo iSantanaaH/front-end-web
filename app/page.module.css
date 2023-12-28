@@ -152,7 +152,6 @@
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
-  /* max-width: 90%; */
   max-width: calc(100vw - 5rem);
   height: auto;
 }
@@ -242,11 +241,12 @@
 }
 
 .Technologies h2,
-.AditionalTitle h2 {
+.AditionalTitle h2,
+.AboutMe h2 {
   font-weight: 500;
   color: var(--white-full);
   font-size: 2.1rem;
-  margin: 7rem 0 3rem 4rem;
+  margin: 10rem 0 3rem 4rem;
 }
 
 .ContainerTechnologies {
@@ -281,4 +281,49 @@
   color: var(--white-full);
   font-size: 2.5rem;
   margin: 2rem 5rem 1.5rem 0;
+}
+
+.AboutMe {
+  min-height: 40rem;
+}
+
+.LineX {
+  margin: 7rem auto;
+  width: 80%;
+  background: var(--white-full);
+  height: 0.800rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.FirstYear {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  background: var(--white-full);
+  border-radius: 100%;
+  position: absolute;
+  top: -1rem;
+  left: -0.100rem;
+}
+
+.TitleFirstYear h2 {
+  position: absolute;
+  top: -14rem;
+  left: -5rem;
+  background: transparent;
+}
+
+.ParagraphFirstYear {
+  width: 10rem;
+  position: absolute;
+  top: 4rem;
+  background: transparent;
+}
+
+.ParagraphFirstYear p {
+  color: var(--white-full);
+  text-align: justify;
+  font-size: 1.2rem;
 }
