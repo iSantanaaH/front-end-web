@@ -35,11 +35,11 @@ export default function NavBar() {
             <Link className={styles.LinksDefault} href={"/#technologies"} passHref>
               <span>Tecnologias</span>
             </Link>
-            <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
-              <span>Sobre mim</span>
-            </Link>
             <Link className={styles.LinksDefault} href={"/#additionalSkills"} passHref>
               <span>Habilidades</span>
+            </Link>
+            <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
+              <span>Sobre mim</span>
             </Link>
           </div>
         </section>
