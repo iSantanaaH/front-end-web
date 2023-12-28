@@ -474,19 +474,33 @@ export default function HomePage() {
       <footer>
         <section className={styles.Footer}>
           <div>
-            <h3>Whatsapp</h3>
+            <h3>Whatsapp:</h3>
             <p>
-              <span>(75)99946-8431</span>
+              <Link className={styles.LinkPhone} href={"tel:+5575999468431"} passHref>
+                <span>(75)</span>
+                99946-8431
+              </Link>
             </p>
             <p>
-              <span>(69)98107-1154</span>
+              <Link className={styles.LinkPhone} href={"tel:+5569981071154"} passHref>
+              <span>(69)</span>
+              98107-1154
+              </Link>
+              
             </p>
           </div>
           <div>
             <h3>Email:</h3>
-            <p>micaeldev.santana@gmail.com</p>
+            <p>
+              <Link
+                className={styles.LinkEmail}
+                href={"mailto:micaeldev.santana@gmail.com"}
+              >
+                micaeldev.santana<span>@gmail.com</span>
+              </Link>
+            </p>
           </div>
-          <div>
+          <div className={styles.SocialFooter}>
             <Link
               target="_blank"
               href={"https://github.com/iSantanaaH"}
