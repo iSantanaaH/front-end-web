@@ -385,7 +385,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.AditionalSkills}>
+      <section id="additionalSkills" className={styles.AditionalSkills}>
         <div className={styles.AditionalTitle}>
           <h2>Tecnologias e habilidades adicionais</h2>
         </div>
@@ -410,6 +410,25 @@ export default function HomePage() {
               <li>Engajamento</li>
               <li>Trabalho em equipe</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section id="aboutMe" className={styles.AboutMe}>
+        <div>
+          <h2>Sobre mim</h2>
+        </div>
+
+        <div className={styles.LineX}>
+          <div className={styles.TitleFirstYear}>
+            <h2>2020</h2>
+          </div>
+          <div className={styles.FirstYear}>
+            <div className={styles.ParagraphFirstYear}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                tincidunt orci non urna interdum,
+              </p>
+            </div>
           </div>
         </div>
       </section>
