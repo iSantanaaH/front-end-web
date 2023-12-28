@@ -430,6 +430,28 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+          <div className={styles.TitleSecondYear}>
+            <h2>2021</h2>
+          </div>
+          <div className={styles.SecondYear}>
+            <div className={styles.ParagraphSecondYear}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                tincidunt orci non urna interdum,
+              </p>
+            </div>
+          </div>
+          <div className={styles.TitleThirdYear}>
+            <h2>2022</h2>
+          </div>
+          <div className={styles.ThirdYear}>
+            <div className={styles.ParagraphThirdYear}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                tincidunt orci non urna interdum,
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

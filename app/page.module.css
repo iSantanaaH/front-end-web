@@ -308,6 +308,30 @@
   left: -0.100rem;
 }
 
+.SecondYear {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  background: var(--white-full);
+  border-radius: 100%;
+  position: absolute;
+  top: -1rem;
+  left: 35rem;
+}
+
+.ThirdYear {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  background: var(--white-full);
+  border-radius: 100%;
+  position: absolute;
+  top: -1rem;
+  left: 65rem;
+}
+
 .TitleFirstYear h2 {
   position: absolute;
   top: -14rem;
@@ -315,14 +339,30 @@
   background: transparent;
 }
 
-.ParagraphFirstYear {
+.TitleSecondYear h2 {
+  position: absolute;
+  top: -14rem;
+  left: 30rem;
+}
+
+.TitleThirdYear h2{
+  position: absolute;
+  top: -14rem;
+  left: 60rem;
+}
+
+.ParagraphFirstYear,
+.ParagraphSecondYear,
+.ParagraphThirdYear {
   width: 10rem;
   position: absolute;
   top: 4rem;
   background: transparent;
 }
 
-.ParagraphFirstYear p {
+.ParagraphFirstYear p,
+.ParagraphSecondYear p,
+.ParagraphThirdYear p {
   color: var(--white-full);
   text-align: justify;
   font-size: 1.2rem;
