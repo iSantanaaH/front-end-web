@@ -283,13 +283,17 @@
   margin: 2rem 5rem 1.5rem 0;
 }
 
-.AboutMe {
-  min-height: 40rem;
+.ContainerResume,
+.AboutMe,
+.Projects,
+.Technologies,
+.AditionalSkills {
+  min-height: 50rem;
 }
 
 .LineX {
   margin: 7rem auto;
-  width: 80%;
+  width: 70%;
   background: var(--white-full);
   height: 0.800rem;
   border-radius: 1rem;
@@ -317,7 +321,7 @@
   border-radius: 100%;
   position: absolute;
   top: -1rem;
-  left: 35rem;
+  left: 30rem;
 }
 
 .ThirdYear {
@@ -329,7 +333,19 @@
   border-radius: 100%;
   position: absolute;
   top: -1rem;
-  left: 65rem;
+  left: 58rem;
+}
+
+.FourthYear {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  background: var(--white-full);
+  border-radius: 100%;
+  position: absolute;
+  top: -1rem;
+  left: 90rem;
 }
 
 .TitleFirstYear h2 {
@@ -342,18 +358,25 @@
 .TitleSecondYear h2 {
   position: absolute;
   top: -14rem;
-  left: 30rem;
+  left: 25rem;
 }
 
 .TitleThirdYear h2{
   position: absolute;
   top: -14rem;
-  left: 60rem;
+  left: 53rem;
+}
+
+.TitleFourthYear h2 {
+  position: absolute;
+  top: -14rem;
+  left: 85rem;
 }
 
 .ParagraphFirstYear,
 .ParagraphSecondYear,
-.ParagraphThirdYear {
+.ParagraphThirdYear,
+.ParagraphFourthYear {
   width: 10rem;
   position: absolute;
   top: 4rem;
@@ -362,7 +385,8 @@
 
 .ParagraphFirstYear p,
 .ParagraphSecondYear p,
-.ParagraphThirdYear p {
+.ParagraphThirdYear p,
+.ParagraphFourthYear p {
   color: var(--white-full);
   text-align: justify;
   font-size: 1.2rem;
