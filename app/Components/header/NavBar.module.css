@@ -40,7 +40,14 @@
   color: var(--green-500);
 }
 
-.SocialNetworks div span{
+.SocialNetworks div span {
   padding: 0.3rem;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .NavBar {
+    display: flex;
+    width: 100%;
+  }
 }
