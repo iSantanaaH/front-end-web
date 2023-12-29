@@ -419,7 +419,7 @@ export default function HomePage() {
         </section>
         <section id="aboutMe" className={styles.AboutMe}>
           <div className={styles.ContainerLimit}>
-            <div>
+            <div className={styles.TitleAboutMe}>
               <h2>Sobre mim</h2>
             </div>
 

@@ -155,13 +155,6 @@
   height: auto;
 }
 
-.Projects h2 {
-  font-weight: 500;
-  color: var(--white-full);
-  font-size: 2rem;
-  margin: 1rem 0 3rem 7rem;
-}
-
 .Box {
   display: flex;
   justify-content: center;
@@ -233,17 +226,15 @@
   color: var(--white-full);
 }
 
-.Technologies {
-  margin: 0 auto;
-  max-width: calc(100vw - 5rem);
-}
 
 .Technologies h2,
-.AditionalTitle h2 {
+.AditionalTitle h2,
+.Projects h2,
+.TitleAboutMe h2 {
   font-weight: 500;
   color: var(--white-full);
   font-size: 2.1rem;
-  margin: 10rem 0 3rem 4rem;
+  margin: 10rem 0 3rem 7rem;
 }
 
 .AboutMe h2 {
@@ -296,18 +287,18 @@
 }
 
 .AboutMe {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
-  width: calc(100vw - 10rem);
   margin: 0 auto;
   box-sizing: border-box;
   padding-bottom: 18rem;
 }
 
 .ContainerLimit {
-  width: 90%;
   margin: 0 auto;
+  width: calc(100vw - 15rem);
+  grid-column: span 3;
 }
 
 .LineX {
