@@ -137,12 +137,13 @@
 
 .ContainerResume {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25rem;
 }
 
 .BackgroundImage {
-  position: absolute;
-  top: 10rem;
-  right: 4rem;
+  color: var(--white-full);
 }
 
 .ContainerBoxes {
