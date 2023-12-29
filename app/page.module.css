@@ -291,11 +291,12 @@
 
 .LineX {
   margin: 7rem auto;
-  width: 77%;
+  width: 70%;
   background: var(--white-full);
   height: 0.8rem;
   border-radius: 1rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .FirstYear {
@@ -308,6 +309,7 @@
   position: absolute;
   top: -1rem;
   left: -0.1rem;
+  box-sizing: border-box;
 }
 
 .SecondYear {
@@ -320,6 +322,7 @@
   position: absolute;
   top: -1rem;
   left: 30rem;
+  box-sizing: border-box;
 }
 
 .ThirdYear {
@@ -332,6 +335,7 @@
   position: absolute;
   top: -1rem;
   left: 58rem;
+  box-sizing: border-box;
 }
 
 .FourthYear {
@@ -344,6 +348,7 @@
   position: absolute;
   top: -1rem;
   left: 90rem;
+  box-sizing: border-box;
 }
 
 .TitleFirstYear h2 {
@@ -380,6 +385,7 @@
   top: 4rem;
   left: -3rem;
   background: transparent;
+  box-sizing: border-box;
 }
 
 .ParagraphFirstYear p,
@@ -389,6 +395,7 @@
   color: var(--white-full);
   text-align: justify;
   font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
 .Footer {
