@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 
 export default function HomePage() {
   return (
-    <>
+    <div>
       <header>
         <section>
           <div>
@@ -418,9 +418,9 @@ export default function HomePage() {
           </div>
         </section>
         <section id="aboutMe" className={styles.AboutMe}>
-          {/* <div>
+          <div>
             <h2>Sobre mim</h2>
-          </div> */}
+          </div>
 
           <div className={styles.LineX}>
             <div className={styles.TitleFirstYear}>
@@ -538,6 +538,6 @@ export default function HomePage() {
           </div>
         </section>
       </footer>
-    </>
+    </div>
   );
 }
