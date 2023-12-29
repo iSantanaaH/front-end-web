@@ -418,9 +418,9 @@ export default function HomePage() {
           </div>
         </section>
         <section id="aboutMe" className={styles.AboutMe}>
-          <div>
+          {/* <div>
             <h2>Sobre mim</h2>
-          </div>
+          </div> */}
 
           <div className={styles.LineX}>
             <div className={styles.TitleFirstYear}>
@@ -476,17 +476,24 @@ export default function HomePage() {
           <div>
             <h3>Whatsapp:</h3>
             <p>
-              <Link className={styles.LinkPhone} href={"tel:+5575999468431"} passHref>
+              <Link
+                className={styles.LinkPhone}
+                href={"tel:+5575999468431"}
+                passHref
+              >
                 <span>(75)</span>
                 99946-8431
               </Link>
             </p>
             <p>
-              <Link className={styles.LinkPhone} href={"tel:+5569981071154"} passHref>
-              <span>(69)</span>
-              98107-1154
+              <Link
+                className={styles.LinkPhone}
+                href={"tel:+5569981071154"}
+                passHref
+              >
+                <span>(69)</span>
+                98107-1154
               </Link>
-              
             </p>
           </div>
           <div>
