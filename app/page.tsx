@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 
 export default function HomePage() {
   return (
-    <div>
+    <main>
       <header>
         <section>
           <div>
@@ -538,6 +538,6 @@ export default function HomePage() {
           </div>
         </section>
       </footer>
-    </div>
+    </main>
   );
 }
