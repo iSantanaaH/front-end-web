@@ -18,3 +18,10 @@ html {
   box-sizing: border-box;
   background: var(--background);
 }
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
