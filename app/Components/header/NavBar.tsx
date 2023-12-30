@@ -2,6 +2,7 @@
   /* Importações principais */
 }
 import Link from "next/link";
+import Image from "next/image";
 
 {
   /* Estilos */
@@ -28,14 +29,22 @@ export default function NavBar() {
         </section>
 
         <section className={styles.SectionLinks}>
-          <div>
+          <div className={styles.ContainerLinks}>
             <Link className={styles.LinksDefault} href={"/#projects"} passHref>
               <span>Projetos</span>
             </Link>
-            <Link className={styles.LinksDefault} href={"/#technologies"} passHref>
+            <Link
+              className={styles.LinksDefault}
+              href={"/#technologies"}
+              passHref
+            >
               <span>Tecnologias</span>
             </Link>
-            <Link className={styles.LinksDefault} href={"/#additionalSkills"} passHref>
+            <Link
+              className={styles.LinksDefault}
+              href={"/#additionalSkills"}
+              passHref
+            >
               <span>Habilidades</span>
             </Link>
             <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
@@ -74,6 +83,18 @@ export default function NavBar() {
               </span>
             </Link>
           </div>
+          <menu className={styles.Menu}>
+            <div>
+              <button>
+                <Image
+                  src={"/Images/menu.svg"}
+                  width={30}
+                  height={30}
+                  alt={"Icon Menu"}
+                />
+              </button>
+            </div>
+          </menu>
         </section>
       </nav>
     </header>
