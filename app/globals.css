@@ -17,6 +17,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   background: var(--background);
+  position: relative;
 }
 
 @media screen and (min-width: 20rem) and (max-width: 64rem) {

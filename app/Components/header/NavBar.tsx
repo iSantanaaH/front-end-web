@@ -13,8 +13,42 @@ import styles from "./NavBar.module.css";
   /* React-icons */
 }
 import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
+import { createPortal } from "react-dom";
 
-export default function NavBar() {
+interface NavBarProps {
+  isOpen: boolean;
+  toggleMenu: () => void;
+  menuRef: React.RefObject<HTMLDivElement>;
+}
+
+export default function NavBar({ isOpen, toggleMenu, menuRef }: NavBarProps) {
+ 
+  const menuContent = (
+    <div className={styles.MenuOptions} ref={menuRef}>
+      <div className={styles.LinksMenu}>
+        <Link className={styles.LinksDefault} href={"/"} passHref>
+          <span>Home</span>
+        </Link>
+        <Link className={styles.LinksDefault} href={"/#projects"} passHref>
+          <span>Projetos</span>
+        </Link>
+        <Link className={styles.LinksDefault} href={"/#technologies"} passHref>
+          <span>Tecnologias</span>
+        </Link>
+        <Link
+          className={styles.LinksDefault}
+          href={"/#additionalSkills"}
+          passHref
+        >
+          <span>Habilidades</span>
+        </Link>
+        <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
+          <span>Sobre mim</span>
+        </Link>
+      </div>
+    </div>
+  );
+
   return (
     <header className={styles.HeaderNavBar}>
       <nav className={styles.NavBar}>
@@ -85,7 +119,7 @@ export default function NavBar() {
           </div>
           <menu className={styles.Menu}>
             <div>
-              <button>
+              <button onClick={toggleMenu}>
                 <Image
                   src={"/Images/menu.svg"}
                   width={30}
@@ -94,6 +128,7 @@ export default function NavBar() {
                 />
               </button>
             </div>
+            {isOpen && createPortal(menuContent, document.body)}
           </menu>
         </section>
       </nav>

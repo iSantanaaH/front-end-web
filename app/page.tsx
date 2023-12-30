@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
@@ -7,14 +8,35 @@ import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
 }
 import NavBar from "./Components/header/NavBar";
 import styles from "./page.module.css";
+import { useEffect, useRef, useState } from "react";
 
 export default function HomePage() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function disableDropdown(event: MouseEvent) {
+      event.stopPropagation();
+
+      const clickedElement = event.target as HTMLElement;
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(clickedElement)
+      ) {
+      }
+    }
+  });
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <main>
+    <>
       <header>
         <section>
           <div>
-            <NavBar />
+            <NavBar menuRef={dropdownRef} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
           </div>
         </section>
       </header>
@@ -540,6 +562,6 @@ export default function HomePage() {
           </div>
         </section>
       </footer>
-    </main>
+    </>
   );
 }

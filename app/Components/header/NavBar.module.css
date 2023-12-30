@@ -53,6 +53,18 @@
   cursor: pointer;
 }
 
+.MenuOptions {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background: var(--white-full);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
 @media screen and (min-width: 20rem) and (max-width: 160rem) {
   .NavBar {
     display: flex;
@@ -69,7 +81,47 @@
 
   .SocialNetworks .Menu {
     display: flex;
-    justify-content: flex-end;
+  }
+
+  .MenuOptions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: var(--background);
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--blackNavBar));
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .LinksMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1rem;
+  }
+
+  .LinksMenu .LinksDefault {
+    margin-top: 2rem;
+  }
+
+  .LinksMenu span {
+    width: 100%;
+    color: var(--white-full);
+    font-size: 1.2rem;
+    background: transparent;
+  }
+
+  .LinksMenu span:hover {
+    transition: 0.5s;
+    background: linear-gradient(to right, var(--blue300), var(--green400));
+    color: var(--white-full);
+    padding: 0.6rem;
+    border-radius: 1rem;
   }
 
   .Menu div button {
