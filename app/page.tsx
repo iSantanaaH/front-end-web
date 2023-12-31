@@ -459,15 +459,31 @@ export default function HomePage() {
             <div className={styles.ContainerYears}>
               <div className={styles.TitleFirstYear}>
                 <h2>2020</h2>
+                <p>
+                  Terminei o ensino médio e comecei a me interessar pela
+                  programação e suas tecnologias.
+                </p>
               </div>
               <div className={styles.TitleFirstYear}>
                 <h2>2021</h2>
+                <p>
+                  Comecei minha faculdade em Análise e Desenvolvimento de
+                  Sistemas e meus estudos na área.
+                </p>
               </div>
               <div className={styles.TitleFirstYear}>
                 <h2>2022</h2>
+                <p>
+                  Já era um Desenvolvedor Jr. e foi quando comecei a desenvolver
+                  projetos pessoais.
+                </p>
               </div>
               <div className={styles.TitleFirstYear}>
                 <h2>2023</h2>
+                <p>
+                  Terminei minha faculdade e com meus projetos e conhecimentos
+                  comecei a buscar minha tão sonhada vaga dev.
+                </p>
               </div>
             </div>
             <div className={styles.LineX}>
