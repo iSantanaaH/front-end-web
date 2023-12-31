@@ -244,21 +244,6 @@
   min-height: 50rem;
 }
 
-.Footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 13rem;
-  width: calc(100vw - 5rem);
-  margin: 0 auto;
-}
-
-.Footer div h3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--white-full);
-}
-
 .Footer div p {
   color: var(--white-full);
   font-size: 1.4rem;
@@ -269,7 +254,8 @@
   color: var(--green400);
 }
 
-.Footer .LinkEmail {
+.Footer .LinkEmail,
+.Footer .LinkPhone {
   text-decoration: none;
   color: var(--white-full);
 }
@@ -277,11 +263,6 @@
 .SocialFooter span {
   font-size: 3.5rem;
   margin-left: 1rem;
-}
-
-.LinkPhone {
-  color: var(--white-full);
-  text-decoration: none;
 }
 
 @media screen and (min-width: 20rem) and (max-width: 48rem) {
@@ -387,6 +368,34 @@
     flex-direction: column;
     gap: 5rem;
     width: calc(100vw - 5rem);
+  }
+
+  .Footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Footer div h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white-full);
+    margin: 0 0 1.5rem 1.5rem;
+  }
+
+  .Footer div p {
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .SocialFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .SocialFooter span {
+    font-size: 2.5rem;
   }
 }
 
@@ -513,5 +522,20 @@
     border-radius: 100%;
     background: var(--white-full);
     margin: -1rem 0 1rem 0;
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 13rem;
+    width: calc(100vw - 5rem);
+    margin: 0 auto;
+  }
+  
+  .Footer div h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white-full);
   }
 }
