@@ -23,9 +23,14 @@ export default function HomePage() {
         dropdownRef.current &&
         !dropdownRef.current.contains(clickedElement)
       ) {
+        setMenuOpen(false);
       }
     }
-  });
+
+    return () => {
+      document.removeEventListener("mousedown", disableDropdown);
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -36,7 +41,11 @@ export default function HomePage() {
       <header>
         <section>
           <div>
-            <NavBar menuRef={dropdownRef} isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+            <NavBar
+              menuRef={dropdownRef}
+              isOpen={isMenuOpen}
+              toggleMenu={toggleMenu}
+            />
           </div>
         </section>
       </header>

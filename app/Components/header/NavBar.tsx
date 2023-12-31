@@ -22,28 +22,27 @@ interface NavBarProps {
 }
 
 export default function NavBar({ isOpen, toggleMenu, menuRef }: NavBarProps) {
- 
   const menuContent = (
     <div className={styles.MenuOptions} ref={menuRef}>
       <div className={styles.LinksMenu}>
         <Link className={styles.LinksDefault} href={"/"} passHref>
-          <span>Home</span>
+          <span onClick={toggleMenu}>Home</span>
         </Link>
         <Link className={styles.LinksDefault} href={"/#projects"} passHref>
-          <span>Projetos</span>
+          <span onClick={toggleMenu}>Projetos</span>
         </Link>
         <Link className={styles.LinksDefault} href={"/#technologies"} passHref>
-          <span>Tecnologias</span>
+          <span onClick={toggleMenu}>Tecnologias</span>
         </Link>
         <Link
           className={styles.LinksDefault}
           href={"/#additionalSkills"}
           passHref
         >
-          <span>Habilidades</span>
+          <span onClick={toggleMenu}>Habilidades</span>
         </Link>
         <Link className={styles.LinksDefault} href={"/#aboutMe"} passHref>
-          <span>Sobre mim</span>
+          <span onClick={toggleMenu}>Sobre mim</span>
         </Link>
       </div>
     </div>
