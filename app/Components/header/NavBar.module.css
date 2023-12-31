@@ -65,10 +65,16 @@
   z-index: 100;
 }
 
-@media screen and (min-width: 20rem) and (max-width: 160rem) {
+@media screen and (min-width: 1rem) {
   .NavBar {
     display: flex;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .Menu {
+    display: none;
   }
 }
 
