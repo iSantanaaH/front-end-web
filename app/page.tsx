@@ -27,10 +27,12 @@ export default function HomePage() {
       }
     }
 
+    document.addEventListener("mousedown", disableDropdown);
+
     return () => {
       document.removeEventListener("mousedown", disableDropdown);
     };
-  }, [isMenuOpen]);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
