@@ -257,7 +257,7 @@
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 20rem) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1023px) {
   .Resume {
     font-size: 1.2rem;
     display: flex;
@@ -405,7 +405,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .NewAboutMe {
     margin: 15.625rem 0 15.625rem 0;
     width: calc(95vw - 5rem);
@@ -476,21 +476,22 @@
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    gap: 25rem;
-  }
-
-  .BackgroundImage {
-    margin-right: 10rem;
+    gap: 5rem;
+    width: calc(100vw - 5rem);
   }
 
   .Resume {
-    font-size: 1.2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 8rem 0 9rem 7rem;
     color: var(--white-full);
     padding: 1rem;
+    width: 40%;
+  }
+
+  .LogoImage {
+    width: 100%;
   }
 
   .AditionalTitle h2,

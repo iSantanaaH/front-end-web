@@ -77,7 +77,7 @@ export default function HomePage() {
           <div className={styles.BackgroundImage}>
             <figure>
               <Image
-                className={styles.LogoJavascript}
+                className={styles.LogoImage}
                 src={"/Images/software.png"}
                 width={500}
                 height={500}
@@ -450,7 +450,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className={styles.NewAboutMe}>
+        <section id="aboutMe" className={styles.NewAboutMe}>
           <div>
             <h2>Sobre mim</h2>
           </div>
