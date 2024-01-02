@@ -21,8 +21,8 @@ html {
 }
 
 @media screen and (min-width: 20rem) and (max-width: 64rem) {
-  body,
+  /* body,
   html {
     overflow-x: hidden;
-  }
+  } */
 }

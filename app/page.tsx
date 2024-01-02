@@ -450,73 +450,41 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section id="aboutMe" className={styles.AboutMe}>
-          <div className={styles.ContainerLimit}>
-            <div className={styles.TitleAboutMe}>
-              <h2>Sobre mim</h2>
+        <section className={styles.NewAboutMe}>
+          <div>
+            <h2>Sobre mim</h2>
+          </div>
+          <div className={styles.Timeline}>
+            <div className={styles.Year}>
+              <h2 className={styles.TitleYear}>2020</h2>
+              <p className={styles.ParagraphYear}>
+                Terminei o ensino médio e comecei a me interessar pela
+                programação e suas tecnologias.
+              </p>
             </div>
-
-            <div className={styles.ContainerYears}>
-              <div className={styles.TitleFirstYear}>
-                <h2>2020</h2>
-                <p>
-                  Terminei o ensino médio e comecei a me interessar pela
-                  programação e suas tecnologias.
-                </p>
-              </div>
-              <div className={styles.TitleFirstYear}>
-                <h2>2021</h2>
-                <p>
-                  Comecei minha faculdade em Análise e Desenvolvimento de
-                  Sistemas e meus estudos na área.
-                </p>
-              </div>
-              <div className={styles.TitleFirstYear}>
-                <h2>2022</h2>
-                <p>
-                  Já era um Desenvolvedor Jr. e foi quando comecei a desenvolver
-                  projetos pessoais.
-                </p>
-              </div>
-              <div className={styles.TitleFirstYear}>
-                <h2>2023</h2>
-                <p>
-                  Terminei minha faculdade e com meus projetos e conhecimentos
-                  comecei a buscar minha tão sonhada vaga dev.
-                </p>
-              </div>
+            <div className={styles.Line}></div>
+            <div className={styles.Year}>
+              <h2 className={styles.TitleYear}>2021</h2>
+              <p className={styles.ParagraphYear}>
+                Comecei minha faculdade em Análise e Desenvolvimento de Sistemas
+                e meus estudos na área.
+              </p>
             </div>
-            <div className={styles.LineX}>
-              <div className={styles.FirstCircle}></div>
-              <div className={styles.SecondCircle}></div>
-              <div className={styles.ThirdCircle}></div>
-              <div className={styles.FourthCircle}></div>
+            <div className={styles.Line}></div>
+            <div className={styles.Year}>
+              <h2 className={styles.TitleYear}>2022</h2>
+              <p className={styles.ParagraphYear}>
+                Já era um Desenvolvedor Jr. e foi quando comecei a desenvolver
+                projetos pessoais.
+              </p>
             </div>
-            <div className={styles.ContainerParagraphs}>
-              <div className={styles.ParagraphFirstYear}>
-                <p>
-                  Terminei o ensino médio e comecei a me interessar pela
-                  programação e suas tecnologias.
-                </p>
-              </div>
-              <div className={styles.ParagraphSecondYear}>
-                <p>
-                  Comecei minha faculdade em Análise e Desenvolvimento de
-                  Sistemas e meus estudos na área.
-                </p>
-              </div>
-              <div className={styles.ParagraphThirdYear}>
-                <p>
-                  Já era um Desenvolvedor Jr. e foi quando comecei a desenvolver
-                  projetos pessoais.
-                </p>
-              </div>
-              <div className={styles.ParagraphFourthYear}>
-                <p>
-                  Terminei minha faculdade e com meus projetos e conhecimentos
-                  comecei a buscar minha tão sonhada vaga dev.
-                </p>
-              </div>
+            <div className={styles.Line}></div>
+            <div className={styles.Year}>
+              <h2 className={styles.TitleYear}>2023</h2>
+              <p className={styles.ParagraphYear}>
+                Terminei minha faculdade e com meus projetos e conhecimentos
+                comecei a buscar minha tão sonhada vaga dev.
+              </p>
             </div>
           </div>
         </section>
