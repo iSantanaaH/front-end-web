@@ -232,7 +232,6 @@
 .ContainerResume,
 .AboutMe,
 .Projects,
-.Technologies,
 .AditionalSkills {
   min-height: 50rem;
 }
@@ -333,13 +332,26 @@
     margin: 3rem 0 2rem 4.5rem;
   }
 
-  .AboutMe {
+  .NewAboutMe {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 2rem auto 7rem auto;
     box-sizing: border-box;
     width: calc(100vw - 4rem);
-    padding-bottom: 15rem;
+  }
+
+  .NewAboutMe h2 {
+    font-weight: 500;
+    color: var(--white-full);
+    font-size: 1.7rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .NewAboutMe p {
+    font-weight: 500;
+    color: var(--white-full);
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 
   .ContainerYears p {
