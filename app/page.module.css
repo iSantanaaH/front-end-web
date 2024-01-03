@@ -8,6 +8,10 @@
   text-align: justify;
 }
 
+.Resume span {
+  color: var(--green-500);
+}
+
 .Resume button {
   border: none;
   padding: 1rem;
