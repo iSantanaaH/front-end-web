@@ -263,8 +263,7 @@
     padding: 1rem;
   }
 
-  .ContainerResume .BackgroundImage,
-  .ContainerParagraphs {
+  .ContainerResume .BackgroundImage {
     display: none;
   }
 
@@ -593,6 +592,11 @@
     font-weight: 500;
     color: var(--white-full);
     font-size: 2.1rem;
+  }
+
+  .Projects h2 {
+    font-size: 2.1rem;
+    margin: 5rem 0 5rem 0;
   }
 
   .Projects,
