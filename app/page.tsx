@@ -450,13 +450,14 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        
         <section id="aboutMe" className={styles.NewAboutMe}>
           <div>
             <h2>Sobre mim</h2>
           </div>
           <div className={styles.Timeline}>
             <div className={styles.Year}>
-              <h2 className={styles.TitleYear}>2020</h2>
+              <h2 className={styles.TitleYear}>2018</h2>
               <p className={styles.ParagraphYear}>
                 Terminei o ensino médio e comecei a me interessar pela
                 programação e suas tecnologias.
