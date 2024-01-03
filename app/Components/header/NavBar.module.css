@@ -72,13 +72,13 @@
   }
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 1024px) {
   .Menu {
     display: none;
   }
 }
 
-@media screen and (min-width: 20rem) and (max-width: 48rem) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .SocialNetworks {
     display: flex;
     gap: 0.5rem;
@@ -137,6 +137,12 @@
   }
 
   .ContainerLinks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Menu {
     display: none;
   }
 }
