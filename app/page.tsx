@@ -431,13 +431,13 @@ export default function HomePage() {
               <ul className={styles.ListSkills}>
                 <li>SQL</li>
                 <li>Banco de dados</li>
-                <li>Tailwind CSS</li>
+                <li>Wordpress</li>
               </ul>
             </div>
             <div>
               <ul className={styles.ListSkills}>
-                <li>Wordpress</li>
-                <li>Next.js</li>
+                <li>Foco em resultado</li>
+                <li>Levantamento de Requisitos</li>
                 <li>Inglês</li>
               </ul>
             </div>
@@ -450,7 +450,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        
+
         <section id="aboutMe" className={styles.NewAboutMe}>
           <div>
             <h2>Sobre mim</h2>
