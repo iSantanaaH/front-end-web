@@ -372,6 +372,7 @@ export default function HomePage() {
                 height={100}
                 alt="Imagem do HTML"
                 className={styles.ImageTechnologies}
+                title="HTML"
               />
             </div>
             <div>
@@ -379,8 +380,9 @@ export default function HomePage() {
                 src={"/Images/css.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do CSS"
                 className={styles.ImageTechnologies}
+                title="CSS"
               />
             </div>
             <div>
@@ -388,8 +390,9 @@ export default function HomePage() {
                 src={"/Images/javascript.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Javascript"
                 className={styles.ImageTechnologies}
+                title="Javascript"
               />
             </div>
             <div>
@@ -397,8 +400,9 @@ export default function HomePage() {
                 src={"/Images/typescript.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Typescript"
                 className={styles.ImageTechnologies}
+                title="Typescript"
               />
             </div>
             <div>
@@ -406,8 +410,9 @@ export default function HomePage() {
                 src={"/Images/node.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Node.js"
                 className={styles.ImageTechnologies}
+                title="Node.js"
               />
             </div>
             <div>
@@ -415,8 +420,9 @@ export default function HomePage() {
                 src={"/Images/react.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do React"
                 className={styles.ImageTechnologies}
+                title="React.js"
               />
             </div>
             <div>
@@ -424,8 +430,9 @@ export default function HomePage() {
                 src={"/Images/postgresql.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do PostgreSQL"
                 className={styles.ImageTechnologies}
+                title="PostgreSQL"
               />
             </div>
             <div>
@@ -433,8 +440,9 @@ export default function HomePage() {
                 src={"/Images/git.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Git"
                 className={styles.ImageTechnologies}
+                title="Git"
               />
             </div>
             <div>
@@ -442,8 +450,9 @@ export default function HomePage() {
                 src={"/Images/linux.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Linux"
                 className={styles.ImageTechnologies}
+                title="Linux"
               />
             </div>
             <div>
@@ -451,8 +460,9 @@ export default function HomePage() {
                 src={"/Images/docker.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Docker"
                 className={styles.ImageTechnologies}
+                title="Docker"
               />
             </div>
             <div>
@@ -460,8 +470,9 @@ export default function HomePage() {
                 src={"/Images/tailwindcss.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do TailwindCSS"
                 className={styles.ImageTechnologies}
+                title="TailwindCSS"
               />
             </div>
             <div>
@@ -469,8 +480,9 @@ export default function HomePage() {
                 src={"/Images/nextjs.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do HTML"
+                alt="Imagem do Next.js"
                 className={styles.ImageTechnologies}
+                title="Next.js"
               />
             </div>
           </div>
