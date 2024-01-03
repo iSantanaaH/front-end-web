@@ -223,11 +223,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.ListSkills li {
-  color: var(--white-full);
-  font-size: 2.5rem;
-  margin: 2rem 5rem 1.5rem 0;
-}
+
 
 .ContainerResume,
 .AboutMe,
@@ -323,6 +319,8 @@
 
   .ListSkills li {
     font-size: 1.5rem;
+    color: var(--white-full);
+    margin: 0 auto 2rem auto;
     width: 100%;
   }
 
@@ -405,7 +403,79 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .ContainerResume {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: calc(100vw - 5rem);
+    margin: 0 auto;
+  }
+
+  .Resume {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8rem 0 9rem 7rem;
+    color: var(--white-full);
+    padding: 1rem;
+    width: 40%;
+  }
+
+  .LogoImage {
+    width: 100%;
+  }
+
+  .AditionalTitle h2,
+  .Projects h2,
+  .Technologies h2 {
+    font-weight: 500;
+    color: var(--white-full);
+    font-size: 2.1rem;
+    margin: 10rem 0 3rem 7rem;
+  }
+
+  .ContainerTechnologies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .AditionalSkills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100vw - 4rem);
+    margin: 0 auto;
+  }
+
+  .ContainerSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    gap: 4rem;
+  }
+
+  .ListSkills li {
+    color: var(--white-full);
+    font-size: 2.1rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .AboutMe h2 {
+    font-weight: 500;
+    color: var(--white-full);
+    font-size: 2.1rem;
+    margin: 10rem 0 3rem 0;
+  }
+
   .NewAboutMe {
     margin: 15.625rem 0 15.625rem 0;
     width: calc(95vw - 5rem);
@@ -471,140 +541,6 @@
     position: relative;
   }
 
-  .ContainerResume {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    width: calc(100vw - 5rem);
-  }
-
-  .Resume {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 8rem 0 9rem 7rem;
-    color: var(--white-full);
-    padding: 1rem;
-    width: 40%;
-  }
-
-  .LogoImage {
-    width: 100%;
-  }
-
-  .AditionalTitle h2,
-  .Projects h2,
-  .Technologies h2 {
-    font-weight: 500;
-    color: var(--white-full);
-    font-size: 2.1rem;
-    margin: 10rem 0 3rem 7rem;
-  }
-
-  .AboutMe h2 {
-    font-weight: 500;
-    color: var(--white-full);
-    font-size: 2.1rem;
-    margin: 10rem 0 3rem 0;
-  }
-
-  .ContainerTechnologies {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 50%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .AboutMe {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-bottom: 18rem;
-  }
-
-  .ContainerLimit {
-    margin: 0 auto;
-    width: calc(100vw - 15rem);
-    grid-column: span 3;
-  }
-
-  .ContainerYears {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-
-  .LineX {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    height: 0.8rem;
-    background: var(--white-full);
-    border-radius: 1rem;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  .ContainerParagraphs {
-    display: flex;
-    justify-content: space-between;
-    gap: 22rem;
-    width: 100%;
-    margin: 2rem auto;
-    box-sizing: border-box;
-    grid-column: span 3;
-  }
-
-  .ParagraphFirstYear p,
-  .ParagraphSecondYear p,
-  .ParagraphThirdYear p,
-  .ParagraphFourthYear p {
-    color: var(--white-full);
-    text-align: justify;
-    font-size: 1.2rem;
-    box-sizing: border-box;
-  }
-
-  .FirstCircle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background: var(--white-full);
-    margin: -1rem 0 1rem 0;
-  }
-
-  .SecondCircle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background: var(--white-full);
-    margin: -1rem 0 1rem 0;
-  }
-
-  .ThirdCircle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background: var(--white-full);
-    margin: -1rem 0 1rem 0;
-  }
-
-  .FourthCircle {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    background: var(--white-full);
-    margin: -1rem 0 1rem 0;
-  }
-
   .Footer {
     display: flex;
     justify-content: space-evenly;
@@ -619,4 +555,8 @@
     font-weight: 500;
     color: var(--white-full);
   }
+}
+
+@media screen and (min-width: 1201px) {
+
 }
