@@ -95,7 +95,7 @@ export default function HomePage() {
             <div className={styles.Box}>
               <figure>
                 <Image
-                  src={"/Images/javascript.png"}
+                  src={"/Images/EstrelaGuia.png"}
                   alt="Projeto 1"
                   width={240}
                   height={140}
@@ -104,20 +104,20 @@ export default function HomePage() {
               </figure>
 
               <div className={styles.ContainerTitle}>
-                <h3>Projeto 1</h3>
+                <h3>Estrela Guia</h3>
                 <div className={styles.ColorBottomTitle}></div>
               </div>
 
               <div className={styles.DescriptionProject}>
                 <p className={styles.Details}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur eros magna, ornare non pulvinar eget, euismod ut
-                  nulla.
+                  Um projeto Full Stack de um blog, onde o usuário pode criar
+                  uma postagem se ele tiver permissão. O projeto conta com
+                  autenticação utilizando JWT e com banco de dados
                 </p>
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"https://estrelaguia.vercel.app/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -207,7 +207,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -237,7 +237,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -297,7 +297,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"}>
+                <Link target="_blank" href={"/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
