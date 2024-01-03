@@ -100,6 +100,7 @@ export default function HomePage() {
                   width={240}
                   height={140}
                   className={styles.ImageProject}
+                  title="Estrela Guia"
                 />
               </figure>
 
@@ -112,11 +113,64 @@ export default function HomePage() {
                 <p className={styles.Details}>
                   Um projeto Full Stack de um blog, onde o usuário pode criar
                   uma postagem se ele tiver permissão. O projeto conta com
-                  autenticação utilizando JWT e com banco de dados
+                  autenticação utilizando JWT e com banco de dados.
                 </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/tailwindcss.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do TailwindCSS"
+                    className={styles.ImageTechnologiesBox}
+                    title="TailwindCSS"
+                  />
+                  <Image
+                    src={"/Images/nextjs.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Nextjs"
+                    className={styles.ImageTechnologiesBox}
+                    title="Next.js"
+                  />
+                  <Image
+                    src={"/Images/typescript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Typescript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Typescript"
+                  />
+                  <Image
+                    src={"/Images/javascript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Javascript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/postgresql.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do PostgreSQL"
+                    className={styles.ImageTechnologiesBox}
+                    title="PostgreSQL"
+                  />
+                </div>
               </div>
 
               <div className={styles.RedirectProject}>
+                <Link href={"/"} className={styles.LinkVideo}>
+                  <span>Vídeo do projeto</span>
+                </Link>
                 <Link target="_blank" href={"https://estrelaguia.vercel.app/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>

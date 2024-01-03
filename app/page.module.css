@@ -158,6 +158,26 @@
   border-radius: 0.5rem;
   width: 100%;
   height: auto;
+  cursor: pointer;
+}
+
+.TechnologiesUsed {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0.7rem 0 0.7rem;
+  gap: 0.5rem;
+}
+
+.LinkVideo span {
+  color: var(--white-full);
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.ImageTechnologiesBox {
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 .Box h3 {
@@ -187,6 +207,19 @@
   text-align: justify;
   font-weight: 200;
 }
+
+.RedirectProject {
+  display: flex;
+  flex-direction: column;
+}
+
+.RedirectProject .LinkVideo {
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0.5rem 0 0.5rem 0;
+ }
+ 
 
 .RedirectProject button {
   padding: 0.8rem;
