@@ -14,6 +14,7 @@ export default function HomePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isFrame, setIframeOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const backgroundVideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     function disableDropdown(event: MouseEvent) {
@@ -38,6 +39,24 @@ export default function HomePage() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      backgroundVideoRef.current &&
+      !backgroundVideoRef.current.contains(event.target as Node)
+    ) {
+      setIframeOpen(false);
+      event.stopPropagation();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
 
   return (
     <>
@@ -90,12 +109,9 @@ export default function HomePage() {
 
         <section id="projects" className={styles.Projects}>
           {isFrame && (
-            <div className={styles.ContainerIframe}>
+            <div  className={styles.ContainerIframe}>
               <div className={styles.Iframe}>
-                <video
-                  src="/Videos/estrelaguia.mkv"
-                  controls
-                ></video>
+                <video ref={backgroundVideoRef} src="/Videos/estrelaguia.mkv" controls></video>
               </div>
             </div>
           )}
