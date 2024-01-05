@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function HomePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isFrame, setIframeOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -88,11 +89,17 @@ export default function HomePage() {
         </section>
 
         <section id="projects" className={styles.Projects}>
+          {isFrame && (
+            <div className={styles.ContainerIframe}>
+              <iframe src="https://www.youtube.com/watch?v=YHW7jcSjv5c&t=174s"
+              width={1000} height={600} allowFullScreen></iframe>
+            </div>
+          )}
           <div>
             <h2>Projetos</h2>
           </div>
           <div className={styles.ContainerBoxes}>
-            <div className={styles.Box}>
+            <div id="estrelaGuia" className={styles.Box}>
               <figure>
                 <Image
                   src={"/Images/EstrelaGuia.png"}
@@ -168,8 +175,10 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"/"} className={styles.LinkVideo}>
-                  <span>Vídeo do projeto</span>
+                <Link href={"#projects"} className={styles.LinkVideo}>
+                  <span onClick={() => setIframeOpen(true)}>
+                    Vídeo do projeto
+                  </span>
                 </Link>
                 <Link target="_blank" href={"https://estrelaguia.vercel.app/"}>
                   <button className={styles.ButtonProject}>Acessar</button>

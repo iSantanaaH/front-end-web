@@ -176,7 +176,24 @@
 .LinkVideo span {
   color: var(--white-full);
   font-weight: 300;
-  margin-top: 5rem;
+}
+
+.LinkVideo span:hover {
+  color: var(--gray);
+}
+
+.ContainerIframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--blackBackground);
+  z-index: 101;
+  opacity: 50%;
 }
 
 .ImageTechnologiesBox {
