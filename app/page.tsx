@@ -91,8 +91,12 @@ export default function HomePage() {
         <section id="projects" className={styles.Projects}>
           {isFrame && (
             <div className={styles.ContainerIframe}>
-              <iframe src="https://www.youtube.com/watch?v=YHW7jcSjv5c&t=174s"
-              width={1000} height={600} allowFullScreen></iframe>
+              <div className={styles.Iframe}>
+                <video
+                  src="/Videos/estrelaguia.mkv"
+                  controls
+                ></video>
+              </div>
             </div>
           )}
           <div>

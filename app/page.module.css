@@ -191,9 +191,17 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--blackBackground);
-  z-index: 101;
-  opacity: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  box-sizing: border-box;
+}
+
+.ContainerIframe .Iframe {
+  height: 37.5rem;
+}
+
+.ContainerIframe .Iframe video {
+  height: 100%;
 }
 
 .ImageTechnologiesBox {
