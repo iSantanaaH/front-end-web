@@ -12,6 +12,10 @@
   color: var(--green-500);
 }
 
+.Year::before {
+  cursor: pointer;
+}
+
 .Resume button {
   border: none;
   padding: 1rem;

@@ -2,19 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
-
-{
-  /* Componentes */
-}
 import NavBar from "./Components/header/NavBar";
 import styles from "./page.module.css";
 import { useEffect, useRef, useState } from "react";
 
+interface IframeVideoProps {
+  id: number;
+  path: string;
+}
+
 export default function HomePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isFrame, setIframeOpen] = useState(false);
+  const [isFrameVideo, setIsframeVideo] = useState<IframeVideoProps | null>(
+    null
+  );
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const backgroundVideoRef = useRef<HTMLVideoElement>(null);
+
+  const openIframe = (video: IframeVideoProps | null) => {
+    setIsframeVideo(video);
+  };
 
   useEffect(() => {
     function disableDropdown(event: MouseEvent) {
@@ -40,12 +48,14 @@ export default function HomePage() {
     setMenuOpen(!isMenuOpen);
   };
 
+
+
   const handleClickOutside = (event: MouseEvent) => {
     if (
       backgroundVideoRef.current &&
       !backgroundVideoRef.current.contains(event.target as Node)
     ) {
-      setIframeOpen(false);
+      setIsframeVideo(null);
       event.stopPropagation();
     }
   };
@@ -108,10 +118,25 @@ export default function HomePage() {
         </section>
 
         <section id="projects" className={styles.Projects}>
-          {isFrame && (
-            <div  className={styles.ContainerIframe}>
+          {/* {isFrame && (
+            <div className={styles.ContainerIframe}>
               <div className={styles.Iframe}>
-                <video ref={backgroundVideoRef} src="/Videos/estrelaguia.mkv" controls></video>
+                <video
+                  ref={backgroundVideoRef}
+                  src="/Videos/estrelaguia.mkv"
+                  controls
+                ></video>
+              </div>
+            </div>
+          )} */}
+          {isFrameVideo && (
+            <div className={styles.ContainerIframe}>
+              <div className={styles.Iframe}>
+                <video
+                  ref={backgroundVideoRef}
+                  src={isFrameVideo.path}
+                  controls
+                ></video>
               </div>
             </div>
           )}
@@ -196,7 +221,7 @@ export default function HomePage() {
 
               <div className={styles.RedirectProject}>
                 <Link href={"#projects"} className={styles.LinkVideo}>
-                  <span onClick={() => setIframeOpen(true)}>
+                  <span onClick={() => openIframe({ id: 1, path: "/Videos/teste.mkv" })}>
                     Vídeo do projeto
                   </span>
                 </Link>
@@ -205,36 +230,94 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className={styles.Box}>
+
+            <div id="estrelaGuia" className={styles.Box}>
               <figure>
                 <Image
-                  src={"/Images/javascript.png"}
+                  src={"/Images/EstrelaGuia.png"}
                   alt="Projeto 1"
                   width={240}
                   height={140}
                   className={styles.ImageProject}
+                  title="Estrela Guia"
                 />
               </figure>
 
               <div className={styles.ContainerTitle}>
-                <h3>Projeto 1</h3>
+                <h3>Estrela Guia</h3>
                 <div className={styles.ColorBottomTitle}></div>
               </div>
 
               <div className={styles.DescriptionProject}>
                 <p className={styles.Details}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur eros magna, ornare non pulvinar eget, euismod ut
-                  nulla.
+                  Um projeto Full Stack de um blog, onde o usuário pode criar
+                  uma postagem se ele tiver permissão. O projeto conta com
+                  autenticação utilizando JWT e com banco de dados.
                 </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/tailwindcss.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do TailwindCSS"
+                    className={styles.ImageTechnologiesBox}
+                    title="TailwindCSS"
+                  />
+                  <Image
+                    src={"/Images/nextjs.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Nextjs"
+                    className={styles.ImageTechnologiesBox}
+                    title="Next.js"
+                  />
+                  <Image
+                    src={"/Images/typescript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Typescript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Typescript"
+                  />
+                  <Image
+                    src={"/Images/javascript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Javascript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/postgresql.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do PostgreSQL"
+                    className={styles.ImageTechnologiesBox}
+                    title="PostgreSQL"
+                  />
+                </div>
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link target="_blank" href={"/"}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
+                  <span onClick={() => openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })}>
+                    Vídeo do projeto
+                  </span>
+                </Link>
+                <Link target="_blank" href={"https://estrelaguia.vercel.app/"}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
             </div>
+
             <div className={styles.Box}>
               <figure>
                 <Image
