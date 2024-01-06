@@ -13,7 +13,6 @@ interface IframeVideoProps {
 
 export default function HomePage() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isFrame, setIframeOpen] = useState(false);
   const [isFrameVideo, setIsframeVideo] = useState<IframeVideoProps | null>(
     null
   );
@@ -47,8 +46,6 @@ export default function HomePage() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-
-
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -118,17 +115,6 @@ export default function HomePage() {
         </section>
 
         <section id="projects" className={styles.Projects}>
-          {/* {isFrame && (
-            <div className={styles.ContainerIframe}>
-              <div className={styles.Iframe}>
-                <video
-                  ref={backgroundVideoRef}
-                  src="/Videos/estrelaguia.mkv"
-                  controls
-                ></video>
-              </div>
-            </div>
-          )} */}
           {isFrameVideo && (
             <div className={styles.ContainerIframe}>
               <div className={styles.Iframe}>
@@ -148,7 +134,7 @@ export default function HomePage() {
               <figure>
                 <Image
                   src={"/Images/EstrelaGuia.png"}
-                  alt="Projeto 1"
+                  alt="Estrela Guia"
                   width={240}
                   height={140}
                   className={styles.ImageProject}
@@ -221,7 +207,11 @@ export default function HomePage() {
 
               <div className={styles.RedirectProject}>
                 <Link href={"#projects"} className={styles.LinkVideo}>
-                  <span onClick={() => openIframe({ id: 1, path: "/Videos/teste.mkv" })}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/teste.mkv" })
+                    }
+                  >
                     Vídeo do projeto
                   </span>
                 </Link>
@@ -231,28 +221,28 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div id="estrelaGuia" className={styles.Box}>
+            <div id="sitenubank" className={styles.Box}>
               <figure>
                 <Image
-                  src={"/Images/EstrelaGuia.png"}
-                  alt="Projeto 1"
-                  width={240}
+                  src={"/Images/SiteNubank.png"}
+                  alt="Site Nubank"
+                  width={250}
                   height={140}
                   className={styles.ImageProject}
-                  title="Estrela Guia"
+                  title="Site Nubank"
                 />
               </figure>
 
               <div className={styles.ContainerTitle}>
-                <h3>Estrela Guia</h3>
+                <h3>Nubank Site</h3>
                 <div className={styles.ColorBottomTitle}></div>
               </div>
 
               <div className={styles.DescriptionProject}>
                 <p className={styles.Details}>
-                  Um projeto Full Stack de um blog, onde o usuário pode criar
-                  uma postagem se ele tiver permissão. O projeto conta com
-                  autenticação utilizando JWT e com banco de dados.
+                  Esse é um site estático que fiz copiando algumas partes do
+                  site da nubank. Foi desenvolvido para aprimorar minhas
+                  habilidades com Grid Layout e FlexBox.
                 </p>
                 <div className={styles.TechnologiesUsed}>
                   <Image
@@ -264,28 +254,12 @@ export default function HomePage() {
                     title="HTML"
                   />
                   <Image
-                    src={"/Images/tailwindcss.svg"}
+                    src={"/Images/css.svg"}
                     width={30}
                     height={30}
-                    alt="Imagem do TailwindCSS"
+                    alt="Imagem do CSS3"
                     className={styles.ImageTechnologiesBox}
-                    title="TailwindCSS"
-                  />
-                  <Image
-                    src={"/Images/nextjs.svg"}
-                    width={30}
-                    height={30}
-                    alt="Imagem do Nextjs"
-                    className={styles.ImageTechnologiesBox}
-                    title="Next.js"
-                  />
-                  <Image
-                    src={"/Images/typescript.svg"}
-                    width={30}
-                    height={30}
-                    alt="Imagem do Typescript"
-                    className={styles.ImageTechnologiesBox}
-                    title="Typescript"
+                    title="CSS"
                   />
                   <Image
                     src={"/Images/javascript.svg"}
@@ -295,24 +269,23 @@ export default function HomePage() {
                     className={styles.ImageTechnologiesBox}
                     title="Javascript"
                   />
-                  <Image
-                    src={"/Images/postgresql.svg"}
-                    width={30}
-                    height={30}
-                    alt="Imagem do PostgreSQL"
-                    className={styles.ImageTechnologiesBox}
-                    title="PostgreSQL"
-                  />
                 </div>
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"#projects"} className={styles.LinkVideo}>
-                  <span onClick={() => openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })}>
+                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                    }
+                  >
                     Vídeo do projeto
                   </span>
                 </Link>
-                <Link target="_blank" href={"https://estrelaguia.vercel.app/"}>
+                <Link
+                  target="_blank"
+                  href={"https://isantanaah.github.io/nubank-site/"}
+                >
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
