@@ -317,11 +317,11 @@ export default function HomePage() {
               <figure>
                 <Image
                   src={"/Images/calculadoraIMC.png"}
-                  alt="Site Nubank"
+                  alt="Calculadora de IMC"
                   width={250}
                   height={140}
                   className={styles.ImageProject}
-                  title="Site Nubank"
+                  title="Calculadora de IMC"
                 />
               </figure>
 
