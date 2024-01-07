@@ -149,6 +149,7 @@ export default function HomePage() {
                     target="_blank"
                     href={"https://github.com/iSantanaaH/blog-star-guide"}
                     passHref
+                    title="Github do projeto"
                   >
                     <span>
                       <FaGithub color="#FFF" />
@@ -250,6 +251,7 @@ export default function HomePage() {
                     target="_blank"
                     href={"https://github.com/iSantanaaH/nubank-site"}
                     passHref
+                    title="Github do projeto"
                   >
                     <span>
                       <FaGithub color="#FFF" />
@@ -330,6 +332,7 @@ export default function HomePage() {
                     target="_blank"
                     href={"https://github.com/iSantanaaH/CalculatorIMC"}
                     passHref
+                    title="Github do projeto"
                   >
                     <span>
                       <FaGithub color="#FFF" />
@@ -387,6 +390,87 @@ export default function HomePage() {
                     alt="Imagem do React"
                     className={styles.ImageTechnologiesBox}
                     title="React"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.RedirectProject}>
+                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                    }
+                  >
+                    Vídeo do projeto
+                  </span>
+                </Link>
+                <Link
+                  target="_blank"
+                  href={"https://isantanaah.github.io/nubank-site/"}
+                >
+                  <button className={styles.ButtonProject}>Acessar</button>
+                </Link>
+              </div>
+            </div>
+            <div id="sitenubank" className={styles.Box}>
+              <figure>
+                <Image
+                  src={"/Images/MundoInvertido.png"}
+                  alt="Site Nubank"
+                  width={250}
+                  height={140}
+                  className={styles.ImageProject}
+                  title="Site Nubank"
+                />
+              </figure>
+
+              <div className={styles.ContainerTitle}>
+                <h3>Mundo Invertido</h3>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/inverted-world"}
+                    passHref
+                    title="Github do projeto"
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className={styles.DescriptionProject}>
+                <p className={styles.Details}>
+                  Essa é uma landing page da série Stranger Things da netflix.
+                  Ao clicar em qualquer lugar do site uma música começa a tocar
+                  de acordo com o tema (light ou dark). O botão no início da
+                  página faz com que todo o site fique de cabeça pra baixo.
+                </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/css.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do SCSS"
+                    className={styles.ImageTechnologiesBox}
+                    title="SCSS"
+                  />
+                  <Image
+                    src={"/Images/javascript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Javascript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Javascript"
                   />
                 </div>
               </div>
