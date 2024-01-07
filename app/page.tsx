@@ -144,7 +144,17 @@ export default function HomePage() {
 
               <div className={styles.ContainerTitle}>
                 <h3>Estrela Guia</h3>
-                <div className={styles.ColorBottomTitle}></div>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/blog-star-guide"}
+                    passHref
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
               </div>
 
               <div className={styles.DescriptionProject}>
@@ -235,7 +245,17 @@ export default function HomePage() {
 
               <div className={styles.ContainerTitle}>
                 <h3>Nubank Site</h3>
-                <div className={styles.ColorBottomTitle}></div>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/nubank-site"}
+                    passHref
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
               </div>
 
               <div className={styles.DescriptionProject}>
@@ -305,6 +325,17 @@ export default function HomePage() {
 
               <div className={styles.ContainerTitle}>
                 <h3>Calculadora de IMC</h3>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/CalculatorIMC"}
+                    passHref
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
               </div>
 
               <div className={styles.DescriptionProject}>

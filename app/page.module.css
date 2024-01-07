@@ -197,14 +197,17 @@
 }
 
 .Box h3 {
+  text-align: center;
+  margin: 0 auto;
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--white-full);
 }
 
 .ContainerTitle {
-  margin: 0 auto;
+  display: flex;
   text-align: center;
+  position: relative;
 }
 
 .ContainerTitle h3 {
@@ -746,6 +749,22 @@
     font-weight: 500;
     color: var(--white-full);
     font-size: 2.1rem;
+  }
+
+  .ContainerTitle {
+    display: flex;
+    text-align: center;
+    position: relative;
+  }
+
+  .GithubProject {
+    position: absolute;
+    right: 2rem;
+    top: 0.1rem;
+  }
+
+  .GithubProject span {
+    font-size: 1.4rem;
   }
 
   .Projects h2 {
