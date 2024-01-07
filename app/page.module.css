@@ -192,8 +192,9 @@
 }
 
 .ImageTechnologiesBox {
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   cursor: pointer;
+  width: 1.5rem;
 }
 
 .Box h3 {

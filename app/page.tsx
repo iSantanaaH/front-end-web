@@ -360,7 +360,7 @@ export default function HomePage() {
                     src={"/Images/scss.svg"}
                     width={30}
                     height={30}
-                    alt="Imagem do CSS3"
+                    alt="Imagem do SCSS"
                     className={styles.ImageTechnologiesBox}
                     title="SCSS"
                   />
@@ -371,6 +371,14 @@ export default function HomePage() {
                     alt="Imagem do Javascript"
                     className={styles.ImageTechnologiesBox}
                     title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/typescript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Typescript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Typescript"
                   />
                   <Image
                     src={"/Images/react.svg"}
