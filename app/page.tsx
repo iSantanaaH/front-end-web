@@ -290,6 +290,87 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+
+            <div id="sitenubank" className={styles.Box}>
+              <figure>
+                <Image
+                  src={"/Images/calculadoraIMC.png"}
+                  alt="Site Nubank"
+                  width={250}
+                  height={140}
+                  className={styles.ImageProject}
+                  title="Site Nubank"
+                />
+              </figure>
+
+              <div className={styles.ContainerTitle}>
+                <h3>Calculadora de IMC</h3>
+                <div className={styles.ColorBottomTitle}></div>
+              </div>
+
+              <div className={styles.DescriptionProject}>
+                <p className={styles.Details}>
+                  Esse projeto foi feito com intuito de aprimorar minhas
+                  habilidades em comunição entre front-end e back-end. É um site
+                  onde o usuário informa sua altura e seu peso para o back-end.
+                  O back processa os dados e retorna o IMC e o status atual do
+                  usuário, o front por sua vez recebe a resposta e informa ao
+                  usuário seu IMC e status que vai de abaixo do peso a obeso.
+                </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/scss.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do CSS3"
+                    className={styles.ImageTechnologiesBox}
+                    title="SCSS"
+                  />
+                  <Image
+                    src={"/Images/javascript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Javascript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/react.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do React"
+                    className={styles.ImageTechnologiesBox}
+                    title="React"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.RedirectProject}>
+                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                    }
+                  >
+                    Vídeo do projeto
+                  </span>
+                </Link>
+                <Link
+                  target="_blank"
+                  href={"https://isantanaah.github.io/nubank-site/"}
+                >
+                  <button className={styles.ButtonProject}>Acessar</button>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
