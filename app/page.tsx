@@ -305,7 +305,6 @@ export default function HomePage() {
 
               <div className={styles.ContainerTitle}>
                 <h3>Calculadora de IMC</h3>
-                <div className={styles.ColorBottomTitle}></div>
               </div>
 
               <div className={styles.DescriptionProject}>
