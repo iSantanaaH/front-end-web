@@ -243,8 +243,7 @@
   font-size: 1.1rem;
   cursor: pointer;
   margin: 0.5rem 0 0.5rem 0;
- }
- 
+}
 
 .RedirectProject button {
   padding: 0.8rem;
@@ -324,7 +323,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 20%;
   }
@@ -344,7 +343,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 25%;
   }
@@ -364,7 +363,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 40%;
   }
@@ -384,7 +383,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 50%;
   }
@@ -584,7 +583,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 60%;
   }
@@ -774,7 +773,7 @@
     z-index: 90;
     box-sizing: border-box;
   }
-  
+
   .ContainerIframe .Iframe {
     height: 60%;
   }
