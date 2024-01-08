@@ -404,10 +404,7 @@ export default function HomePage() {
                     Vídeo do projeto
                   </span>
                 </Link>
-                <Link
-                  target="_blank"
-                  href={""}
-                >
+                <Link target="_blank" href={""}>
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
               </div>
@@ -462,7 +459,7 @@ export default function HomePage() {
                     height={30}
                     alt="Imagem do SCSS"
                     className={styles.ImageTechnologiesBox}
-                    title="SCSS"
+                    title="CSS"
                   />
                   <Image
                     src={"/Images/javascript.svg"}
@@ -488,6 +485,78 @@ export default function HomePage() {
                 <Link
                   target="_blank"
                   href={"https://isantanaah.github.io/inverted-world/"}
+                >
+                  <button className={styles.ButtonProject}>Acessar</button>
+                </Link>
+              </div>
+            </div>
+            <div id="sitenubank" className={styles.Box}>
+              <figure>
+                <Image
+                  src={"/Images/Advocacia.png"}
+                  alt="Advocacia"
+                  width={250}
+                  height={140}
+                  className={styles.ImageProject}
+                  title="Advocacia"
+                />
+              </figure>
+
+              <div className={styles.ContainerTitle}>
+                <h3>Consultor Jurídico </h3>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/senhor_lei"}
+                    passHref
+                    title="Github do projeto"
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className={styles.DescriptionProject}>
+                <p className={styles.Details}>
+                  Essa é uma landing page de um consultor jurídico. Esse site
+                  foi feito com o objetivo de aprender sobreo efeito Parallax no
+                  CSS.
+                </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/css.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do CSS"
+                    className={styles.ImageTechnologiesBox}
+                    title="CSS"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.RedirectProject}>
+                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                    }
+                  >
+                    Vídeo do projeto
+                  </span>
+                </Link>
+                <Link
+                  target="_blank"
+                  href={"https://isantanaah.github.io/senhor_lei/"}
                 >
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
