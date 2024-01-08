@@ -406,7 +406,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   target="_blank"
-                  href={"https://isantanaah.github.io/nubank-site/"}
+                  href={""}
                 >
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
@@ -487,7 +487,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   target="_blank"
-                  href={"https://isantanaah.github.io/nubank-site/"}
+                  href={"https://isantanaah.github.io/inverted-world/"}
                 >
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
