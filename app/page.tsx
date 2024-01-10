@@ -298,7 +298,7 @@ export default function HomePage() {
                 <Link href={"#sitenubank"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
-                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                      openIframe({ id: 2, path: "/Videos/estrelaguia.mkv" })
                     }
                   >
                     Vídeo do projeto
@@ -393,12 +393,11 @@ export default function HomePage() {
                   />
                 </div>
               </div>
-
               <div className={styles.RedirectProject}>
-                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
-                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                      openIframe({ id: 3, path: "/Videos/CalculadoradeIMC.mkv" })
                     }
                   >
                     Vídeo do projeto
@@ -409,6 +408,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+
             <div id="sitenubank" className={styles.Box}>
               <figure>
                 <Image
