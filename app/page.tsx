@@ -295,7 +295,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
                       openIframe({ id: 2, path: "/Videos/estrelaguia.mkv" })
@@ -473,7 +473,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
                       openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
@@ -545,7 +545,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
                       openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
@@ -617,7 +617,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.RedirectProject}>
-                <Link href={"#sitenubank"} className={styles.LinkVideo}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
                       openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
@@ -629,6 +629,101 @@ export default function HomePage() {
                 <Link
                   target="_blank"
                   href={"https://isantanaah.github.io/lanchonete/"}
+                >
+                  <button className={styles.ButtonProject}>Acessar</button>
+                </Link>
+              </div>
+            </div>
+
+            <div id="projects" className={styles.Box}>
+              <figure>
+                <Image
+                  src={"/Images/ShopGamer.png"}
+                  alt="Shop Gamer"
+                  width={250}
+                  height={140}
+                  className={styles.ImageProject}
+                  title="Shop Gamer"
+                />
+              </figure>
+
+              <div className={styles.ContainerTitle}>
+                <h3>Shop Gamer</h3>
+                <div className={styles.GithubProject}>
+                  <Link
+                    target="_blank"
+                    href={"https://github.com/iSantanaaH/store_game_next"}
+                    passHref
+                    title="Github do projeto"
+                  >
+                    <span>
+                      <FaGithub color="#FFF" />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+
+              <div className={styles.DescriptionProject}>
+                <p className={styles.Details}>
+                  Em construção...
+                </p>
+                <div className={styles.TechnologiesUsed}>
+                  <Image
+                    src={"/Images/html.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do HTML"
+                    className={styles.ImageTechnologiesBox}
+                    title="HTML"
+                  />
+                  <Image
+                    src={"/Images/tailwindcss.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do TailwindCSS"
+                    className={styles.ImageTechnologiesBox}
+                    title="TailwindCSS"
+                  />
+                  <Image
+                    src={"/Images/javascript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Javascript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/typescript.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Typescript"
+                    className={styles.ImageTechnologiesBox}
+                    title="Typescript"
+                  />
+                  <Image
+                    src={"/Images/mysql.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Mysql"
+                    className={styles.ImageTechnologiesBox}
+                    title="Mysql"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.RedirectProject}>
+                <Link href={"#projects"} className={styles.LinkVideo}>
+                  <span
+                    onClick={() =>
+                      openIframe({ id: 1, path: "/Videos/estrelaguia.mkv" })
+                    }
+                  >
+                    Vídeo do projeto
+                  </span>
+                </Link>
+                <Link
+                  target="_blank"
+                  href={"https://store-game-next.vercel.app/"}
                 >
                   <button className={styles.ButtonProject}>Acessar</button>
                 </Link>
