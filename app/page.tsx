@@ -429,7 +429,10 @@ export default function HomePage() {
                 <Link href={"#projects"} className={styles.LinkVideo}>
                   <span
                     onClick={() =>
-                      openIframe({ id: 3, path: "/Videos/CalculadoradeIMC.mkv" })
+                      openIframe({
+                        id: 3,
+                        path: "/Videos/CalculadoradeIMC.mkv",
+                      })
                     }
                   >
                     Vídeo do projeto
@@ -696,9 +699,7 @@ export default function HomePage() {
               </div>
 
               <div className={styles.DescriptionProject}>
-                <p className={styles.Details}>
-                  Em construção...
-                </p>
+                <p className={styles.Details}>Em construção...</p>
                 <div className={styles.TechnologiesUsed}>
                   <Image
                     src={"/Images/html.svg"}
@@ -823,9 +824,19 @@ export default function HomePage() {
                 src={"/Images/node.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do Node.js"
+                alt="Imagem do Node"
                 className={styles.ImageTechnologies}
-                title="Node.js"
+                title="Node"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/Images/express.svg"}
+                width={100}
+                height={100}
+                alt="Imagem do Express"
+                className={styles.ImageTechnologies}
+                title="Express"
               />
             </div>
             <div>
@@ -835,7 +846,27 @@ export default function HomePage() {
                 height={100}
                 alt="Imagem do React"
                 className={styles.ImageTechnologies}
-                title="React.js"
+                title="React"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/Images/nextjs.svg"}
+                width={100}
+                height={100}
+                alt="Imagem do Next"
+                className={styles.ImageTechnologies}
+                title="Next"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/Images/tailwindcss.svg"}
+                width={100}
+                height={100}
+                alt="Imagem do TailwindCSS"
+                className={styles.ImageTechnologies}
+                title="TailwindCSS"
               />
             </div>
             <div>
@@ -846,6 +877,26 @@ export default function HomePage() {
                 alt="Imagem do PostgreSQL"
                 className={styles.ImageTechnologies}
                 title="PostgreSQL"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/Images/mysql.svg"}
+                width={100}
+                height={100}
+                alt="Imagem do Mysql"
+                className={styles.ImageTechnologies}
+                title="Mysql"
+              />
+            </div>
+            <div>
+              <Image
+                src={"/Images/docker.svg"}
+                width={100}
+                height={100}
+                alt="Imagem do Docker"
+                className={styles.ImageTechnologies}
+                title="Docker"
               />
             </div>
             <div>
@@ -866,36 +917,6 @@ export default function HomePage() {
                 alt="Imagem do Linux"
                 className={styles.ImageTechnologies}
                 title="Linux"
-              />
-            </div>
-            <div>
-              <Image
-                src={"/Images/docker.svg"}
-                width={100}
-                height={100}
-                alt="Imagem do Docker"
-                className={styles.ImageTechnologies}
-                title="Docker"
-              />
-            </div>
-            <div>
-              <Image
-                src={"/Images/tailwindcss.svg"}
-                width={100}
-                height={100}
-                alt="Imagem do TailwindCSS"
-                className={styles.ImageTechnologies}
-                title="TailwindCSS"
-              />
-            </div>
-            <div>
-              <Image
-                src={"/Images/nextjs.svg"}
-                width={100}
-                height={100}
-                alt="Imagem do Next"
-                className={styles.ImageTechnologies}
-                title="Next"
               />
             </div>
           </div>
