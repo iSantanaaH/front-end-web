@@ -187,7 +187,7 @@ export default function HomePage() {
                     height={30}
                     alt="Imagem do Nextjs"
                     className={styles.ImageTechnologiesBox}
-                    title="Next.js"
+                    title="Next"
                   />
                   <Image
                     src={"/Images/typescript.svg"}
@@ -204,6 +204,22 @@ export default function HomePage() {
                     alt="Imagem do Javascript"
                     className={styles.ImageTechnologiesBox}
                     title="Javascript"
+                  />
+                  <Image
+                    src={"/Images/node.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Node"
+                    className={styles.ImageTechnologiesBox}
+                    title="Node"
+                  />
+                  <Image
+                    src={"/Images/express.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Express"
+                    className={styles.ImageTechnologiesBox}
+                    title="Express"
                   />
                   <Image
                     src={"/Images/postgresql.svg"}
@@ -390,6 +406,22 @@ export default function HomePage() {
                     alt="Imagem do React"
                     className={styles.ImageTechnologiesBox}
                     title="React"
+                  />
+                  <Image
+                    src={"/Images/node.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Node"
+                    className={styles.ImageTechnologiesBox}
+                    title="Node"
+                  />
+                  <Image
+                    src={"/Images/express.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Express"
+                    className={styles.ImageTechnologiesBox}
+                    title="Express"
                   />
                 </div>
               </div>
@@ -701,6 +733,14 @@ export default function HomePage() {
                     title="Typescript"
                   />
                   <Image
+                    src={"/Images/node.svg"}
+                    width={30}
+                    height={30}
+                    alt="Imagem do Node"
+                    className={styles.ImageTechnologiesBox}
+                    title="Node"
+                  />
+                  <Image
                     src={"/Images/mysql.svg"}
                     width={30}
                     height={30}
@@ -853,9 +893,9 @@ export default function HomePage() {
                 src={"/Images/nextjs.svg"}
                 width={100}
                 height={100}
-                alt="Imagem do Next.js"
+                alt="Imagem do Next"
                 className={styles.ImageTechnologies}
-                title="Next.js"
+                title="Next"
               />
             </div>
           </div>
