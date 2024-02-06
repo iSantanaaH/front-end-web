@@ -105,9 +105,9 @@ export default function HomePage() {
             <figure>
               <Image
                 className={styles.LogoImage}
-                src={"/Images/software.png"}
-                width={500}
-                height={500}
+                src={"/Images/minha_foto.png"}
+                width={700}
+                height={700}
                 alt="Logo react.js"
               />
             </figure>
