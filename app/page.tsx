@@ -86,7 +86,7 @@ export default function HomePage() {
             <p>
               Olá, meu nome é <span>Micael Santana</span>, sou um entusiasta e
               desenvolvedor front-end, sou formado em Análise e Desenvolvimento
-              de Sistemas na UNOPOAR em Dezembro de 2023. Tenho uma paixão
+              de Sistemas na UNOPAR em Dezembro de 2023. Tenho uma paixão
               profunda por tecnologia e estou em constante busca pelo
               aprimoramento das minhas habilidades na programação. Com um
               background acadêmico sólido e uma abordagem prática no
