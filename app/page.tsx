@@ -981,7 +981,7 @@ export default function HomePage() {
             </div>
             <div className={styles.Line}></div>
             <div className={styles.Year}>
-              <h2 className={styles.TitleYear}>2023</h2>
+              <h2 className={styles.TitleYear}>2024</h2>
               <p className={styles.ParagraphYear}>
                 Terminei minha faculdade e com meus projetos e conhecimentos
                 comecei a buscar minha tão sonhada vaga dev.
